@@ -9,7 +9,6 @@ $("#btnSend").click(function () {
     final = parseInt($("#txtFinalExam").val()) * .1;
     intex = parseInt($("#txtIntex").val()) * .1;
     var total = assignments + groupProjects + quizzes + midterm + final + intex;
-
     // check letter grade
     if (total >= 93) {
         printStatement = total + '% A'
@@ -48,4 +47,5 @@ $("#btnSend").click(function () {
         printStatement = total + '% E'
     }
     $('#jsresult').html(printStatement);
+    alert(printStatement);
 })
